@@ -17,10 +17,17 @@ namespace Encapsulation.ConsoleApp
         {
             Console.WriteLine("What colour do you want to paint your dog?");
             newColor = Console.ReadLine();
-            if (string.IsNullOrWhiteSpace(newColor))
+            if (String.IsNullOrWhiteSpace(newColor))
             {
-                Console.WriteLine("The new color can't be empty.");
-                return;
+                do
+                {
+                    Console.WriteLine("The new color can't be empty.");
+                    Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("What colour do you want to paint your dog?");
+                    newColor = Console.ReadLine();
+
+                } while (String.IsNullOrWhiteSpace(newColor));
             }
 
             _furColor = newColor;

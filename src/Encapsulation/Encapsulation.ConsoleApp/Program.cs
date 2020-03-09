@@ -34,7 +34,8 @@ namespace Encapsulation.ConsoleApp
                     Console.ReadKey();
                     Console.Clear();
                 }
-
+                Console.Clear();
+              
                 Console.WriteLine("Do you wish to continue?");
                 keepGoing = Console.ReadLine().ToLower() == "yes";
 
