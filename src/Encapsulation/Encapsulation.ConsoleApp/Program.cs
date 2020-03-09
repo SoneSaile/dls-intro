@@ -25,6 +25,7 @@ namespace Encapsulation.ConsoleApp
                     string eyeColor = Console.ReadLine();
 
                     Dog yourNewDog = new Dog(furColor, eyeColor);
+                    yourNewDog.PaintFur(Console.ReadLine());
 
                     Console.Clear();
 

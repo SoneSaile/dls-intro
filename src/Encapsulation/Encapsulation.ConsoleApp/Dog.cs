@@ -15,6 +15,8 @@ namespace Encapsulation.ConsoleApp
 
         public void PaintFur(string newColor)
         {
+            Console.WriteLine("What colour do you want to paint your dog?");
+            newColor = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(newColor))
             {
                 Console.WriteLine("The new color can't be empty.");
